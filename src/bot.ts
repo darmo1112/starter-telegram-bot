@@ -183,7 +183,7 @@ const replyWithIntro = (ctx: any) =>
 bot.command("start", replyWithIntro);
 
 
-const datadebug = (ctx) => ctx.reply(ctx);
+const datadebug = (ctx) => ctx.reply(`${ctx}`);
 bot.command("info", datadebug);
 
 bot.on("message", replyWithIntro);
