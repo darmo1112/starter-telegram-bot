@@ -182,8 +182,8 @@ const replyWithIntro = (ctx: any) =>
 
 bot.command("start", replyWithIntro);
 
-
-const datadebug = (ctx) => ctx.reply(`${ctx}`);
+const pesan = JSON.stringify(ctx);
+const datadebug = (ctx) => ctx.reply(`${pesan}`);
 bot.command("info", datadebug);
 
 bot.on("message", replyWithIntro);
