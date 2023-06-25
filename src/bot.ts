@@ -185,7 +185,7 @@ bot.command("start", replyWithIntro);
 
 //const pesan = JSON.stringify(ctx);
 //const datadebug = (ctx) => ctx.reply(`${pesan}`);
-bot.command("info", (ctx) => ctx.reply(`informasi`));
+//bot.command("info", (ctx) => ctx.reply(`informasi`));
 
 bot.on("message", replyWithIntro);
 
