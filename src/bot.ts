@@ -181,12 +181,12 @@ const replyWithIntro = (ctx: any) =>
   });
 
 bot.command("start", replyWithIntro);
-bot.on("message", replyWithIntro);
+
 
 const datadebug = (ctx) => ctx.reply(ctx);
-
-
 bot.command("info", datadebug);
+
+bot.on("message", replyWithIntro);
 
 // Start the server
 if (process.env.NODE_ENV === "production") {
